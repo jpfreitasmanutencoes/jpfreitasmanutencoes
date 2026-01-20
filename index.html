@@ -16,13 +16,14 @@
       color: #f5f5f5;
     }
 
-    /* TOPO COM LOGO ESTICADA */
+    /* FAIXA COM LOGO (SÍMBOLO INFINITO INTEIRO) */
     .faixa-topo {
-      height: 360px;
+      height: 280px;
+      background-color: #000;
       background-image: url("jp.jpg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover; /* 🔥 ESTICA A LOGO */
+      background-size: contain; /* 🔑 MOSTRA O SÍMBOLO INTEIRO */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -30,12 +31,12 @@
       position: relative;
     }
 
-    /* ESCURECE PARA O TEXTO APARECER */
+    /* LEVE ESCURECIMENTO PRA TEXTO */
     .faixa-topo::after {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.55);
+      background-color: rgba(0, 0, 0, 0.25);
     }
 
     .faixa-topo h1,
@@ -174,5 +175,4 @@
 
 </body>
 </html>
-
 
