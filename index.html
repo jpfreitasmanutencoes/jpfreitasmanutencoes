@@ -6,62 +6,66 @@
   <meta name="google-site-verification" content="vT_gNzATJWV1dG0ZYbN5hnYUqhRltbXgKXL7DsUiayo">
 
   <title>JP Freitas Manutenções</title>
-  <meta name="description" content="JP Freitas Manutenções - Serviços de manutenção em São Paulo. Elétrica, hidráulica, ar-condicionado, telhados e engenharia mecânica.">
+  <meta name="description" content="JP Freitas Manutenções - Serviços de manutenção em São Paulo.">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #000;
-      color: #f5f5f5;
+      background: #000;
+      color: #fff;
     }
 
     /* ===== TOPO ===== */
-    .faixa-topo {
+    .topo {
+      position: relative;
+      height: 360px;
       background-color: #000;
-      height: 320px;
+      background-image: url("jp.jpg");
+      background-repeat: no-repeat;
+      background-size: 95% auto;              /* estica largura */
+      background-position: center center;     /* CENTRAL REAL */
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      overflow: hidden;
     }
 
-    .logo-topo {
-      width: 90%;          /* estica na largura */
-      max-width: 1200px;   /* limite bonito */
-      height: auto;
-      margin-bottom: 20px;
-      margin-top: 20px;    /* 🔽 desce o infinito */
+    /* camada de conteúdo */
+    .topo-conteudo {
+      position: relative;
+      z-index: 2;
+      max-width: 90%;
     }
 
-    .faixa-topo h1 {
+    .topo h1 {
       margin: 0;
-      color: #d4af37;
       font-size: 36px;
       letter-spacing: 2px;
+      color: #d4af37;
       text-transform: uppercase;
     }
 
-    .faixa-topo p {
-      margin: 12px 0 22px;
+    .topo p {
+      margin: 15px 0 25px;
       font-size: 18px;
     }
 
     .btn {
-      background-color: #d4af37;
+      background: #d4af37;
       color: #000;
-      padding: 14px 28px;
-      text-decoration: none;
+      padding: 14px 30px;
       border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
+      display: inline-block;
     }
 
+    /* ===== SEÇÕES ===== */
     section {
-      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 50px 20px;
     }
 
     h2 {
@@ -81,11 +85,10 @@
     }
 
     footer {
-      background-color: #111;
+      background: #111;
       color: #aaa;
       text-align: center;
       padding: 25px;
-      margin-top: 40px;
     }
 
     .whatsapp {
@@ -99,21 +102,35 @@
       text-decoration: none;
       font-size: 22px;
     }
+
+    /* ===== RESPONSIVO ===== */
+    @media (max-width: 768px) {
+      .topo {
+        height: 300px;
+        background-size: 120% auto; /* ajusta infinito no celular */
+      }
+
+      .topo h1 {
+        font-size: 26px;
+      }
+
+      .topo p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <header class="faixa-topo">
-    <!-- LOGO ESTICADA, NÃO SOME -->
-    <img src="jp.jpg" alt="Logo JP Freitas Manutenções" class="logo-topo">
-
-    <h1>JP Freitas Manutenções</h1>
-    <p>Qualidade que você sente. Confiança que permanece.</p>
-
-    <a class="btn" href="https://wa.me/5511939433786" target="_blank">
-      Solicitar orçamento pelo WhatsApp
-    </a>
+  <header class="topo">
+    <div class="topo-conteudo">
+      <h1>JP Freitas Manutenções</h1>
+      <p>Qualidade que você sente. Confiança que permanece.</p>
+      <a class="btn" href="https://wa.me/5511939433786" target="_blank">
+        Solicitar orçamento pelo WhatsApp
+      </a>
+    </div>
   </header>
 
   <section>
@@ -123,9 +140,9 @@
       <li>Manutenções preventivas</li>
       <li>Manutenções corretivas</li>
       <li>Serviços gerais de manutenção</li>
-      <li>Serviços em telhado</li>
-      <li>Serviços elétricos</li>
-      <li>Serviços hidráulicos</li>
+      <li>Telhados</li>
+      <li>Elétrica</li>
+      <li>Hidráulica</li>
       <li>Engenharia mecânica</li>
     </ul>
   </section>
