@@ -16,14 +16,14 @@
       color: #f5f5f5;
     }
 
-    /* FAIXA COM LOGO MAIS LARGA (HORIZONTAL) */
+    /* FAIXA COM LOGO CENTRAL AJUSTADA */
     .faixa-topo {
-      height: 300px; /* altura fixa */
+      height: 300px;
       background-color: #000;
       background-image: url("jp.jpg");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: 90% auto; /* 🔥 AUMENTA A LARGURA DA LOGO */
+      background-size: 90% auto; /* largura grande */
+      background-position: center 60%; /* 🔥 DESCE O INFINITO */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -31,7 +31,7 @@
       position: relative;
     }
 
-    /* CONTRASTE SUAVE */
+    /* CONTRASTE */
     .faixa-topo::after {
       content: "";
       position: absolute;
@@ -139,12 +139,6 @@
     <li>Serviços hidráulicos</li>
     <li>Engenharia mecânica</li>
   </ul>
-</section>
-
-<section>
-  <h2>Contato</h2>
-  <p><strong>WhatsApp:</strong> (11) 93943-3786</p>
-  <p><strong>Região atendida:</strong> São Paulo e região</p>
 </section>
 
 <footer>
