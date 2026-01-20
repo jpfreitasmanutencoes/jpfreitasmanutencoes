@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="vT_gNzATJWV1dG0ZYbN5hnYUqhRltbXgKXL7DsUiayo" />
+  <meta name="google-site-verification" content="vT_gNzATJWV1dG0ZYbN5hnYUqhRltbXgKXL7DsUiayo">
 
   <title>JP Freitas Manutenções</title>
   <meta name="description" content="JP Freitas Manutenções - Serviços de manutenção em São Paulo. Elétrica, hidráulica, ar-condicionado, telhados e engenharia mecânica.">
@@ -16,44 +16,43 @@
       color: #f5f5f5;
     }
 
-    /* TOPO COM FAIXA AZUL E LOGO NO FUNDO */
+    /* TOPO: LOGO OCUPA TODA A FAIXA */
     .faixa-topo {
       position: relative;
-      height: 180px;
-      background-color: #0a2a66;
+      height: 220px;
+      background-image: url("jp.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; /* LOGO EM TODA A FAIXA */
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      overflow: hidden;
     }
 
-    .faixa-topo::before {
+    /* CAMADA ESCURA PARA DAR CONTRASTE AO TEXTO */
+    .faixa-topo::after {
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("jp.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 260px;
-      opacity: 0.15;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .faixa-topo .conteudo-topo {
+      position: relative;
+      z-index: 1;
     }
 
     .faixa-topo h1 {
-      position: relative;
-      z-index: 1;
       color: #d4af37;
-      font-size: 34px;
+      font-size: 36px;
       letter-spacing: 2px;
       text-transform: uppercase;
       margin: 0;
     }
 
     .faixa-topo p {
-      position: relative;
-      z-index: 1;
-      color: #f5f5f5;
-      margin-top: 10px;
+      margin: 10px 0 20px;
       font-size: 18px;
     }
 
@@ -65,7 +64,6 @@
       border-radius: 5px;
       font-size: 16px;
       display: inline-block;
-      margin-top: 15px;
     }
 
     section {
@@ -116,7 +114,7 @@
 <body>
 
   <header class="faixa-topo">
-    <div>
+    <div class="conteudo-topo">
       <h1>JP Freitas Manutenções</h1>
       <p>Qualidade que você sente. Confiança que permanece.</p>
       <a class="btn" href="https://wa.me/5511939433786" target="_blank">
@@ -176,4 +174,5 @@
 
 </body>
 </html>
+
 
